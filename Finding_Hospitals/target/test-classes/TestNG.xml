@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="FindingHospitalss">
+	<test name="SeleniumTesting">
+		<groups>
+			<run>
+				<include name="smoke" />
+				<include name="Regression" />
+			</run>			
+		</groups>
+		<classes>
+			<class name="TestSuites.TestCases" />
+		</classes>					
+	</test>
+</suite>

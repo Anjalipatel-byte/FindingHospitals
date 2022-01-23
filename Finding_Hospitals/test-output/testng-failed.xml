@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [FindingHospitalss]">
+  <test name="SeleniumTesting">
+    <groups>
+      <run>
+        <include name="smoke"/>
+        <include name="Regression"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="TestSuites.TestCases"/>
+    </classes>
+  </test> <!-- SeleniumTesting -->
+  <test name="SeleniumTesting(failed)">
+    <groups>
+      <run>
+        <include name="smoke"/>
+        <include name="Regression"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="TestSuites.TestCases">
+        <methods>
+          <include name="TopCities"/>
+          <include name="CaptureAlert"/>
+          <include name="navigateToHome"/>
+          <include name="navigateBack"/>
+          <include name="hospitalNames"/>
+          <include name="invokeBrowse"/>
+        </methods>
+      </class> <!-- TestSuites.TestCases -->
+    </classes>
+  </test> <!-- SeleniumTesting(failed) -->
+</suite> <!-- Failed suite [FindingHospitalss] -->
